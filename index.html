@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Marionette Contact Manager</title>
+     <link href="http://fonts.googleapis.com/css?family=Gochi+Hand" rel='stylesheet' type='text/css'> 
+    <title>Alexander Volkov</title>
     <link href="./assets/css/bootstrap.css" rel="stylesheet">
     <link href="./assets/css/application.css" rel="stylesheet">
     <link href="./assets/css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
@@ -20,25 +21,31 @@
     </div>
 
     <script type="text/template" id="header-template">
+		
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#contacts">Contact manager</a>
+		
+          <a class="brand" href="#contacts">Alexander Volkov</a>
           <div class="nav-collapse collapse">
             <ul class="nav"></ul>
           </div>
+			<img src="assets/img/logo.jpg" alt="Volkov" height="180" width="250">
         </div>
-      </div>
-    </script>
 
+      </div>
+ 
+    </script>
+	
     <script type="text/template" id="header-link">
       <a href="#<%- url %>"><%- name %></a>
     </script>
 
     <script type="text/template" id="contact-list">
+	
       <thead>
         <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
+          <th>Activity</th>
+          <th>Activity</th>
           <th></th>
         </tr>
       </thead>
@@ -51,7 +58,7 @@
     </script>
 
     <script type="text/template" id="contact-list-item">
-      <td><%- firstName %></td>
+      <td><img src="assets/img/activity/<%- id %>.jpg" alt="Volkov" height="180" width="250"></td>
       <td><%- lastName %></td>
       <td>
         <a href="#contacts/<%- id %>" class="btn btn-small js-show">
